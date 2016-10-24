@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185B52ED1DBD977E00AC792C /* PostDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B52EC1DBD977E00AC792C /* PostDetailRouter.swift */; };
+		185B52F21DBD97A100AC792C /* PostDetailPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B52F11DBD97A100AC792C /* PostDetailPresenterType.swift */; };
+		185B52F41DBD97AF00AC792C /* PostDetailPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B52F31DBD97AF00AC792C /* PostDetailPresenterDelegate.swift */; };
+		185B52F61DBD97B900AC792C /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B52F51DBD97B900AC792C /* PostDetailPresenter.swift */; };
+		185B52F91DBD97CB00AC792C /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B52F71DBD97CB00AC792C /* PostDetailViewController.swift */; };
+		185B52FA1DBD97CB00AC792C /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185B52F81DBD97CB00AC792C /* PostDetailViewController.xib */; };
+		185B52FD1DBD983C00AC792C /* PostDetailViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B52FC1DBD983C00AC792C /* PostDetailViewEntity.swift */; };
 		186673251DBD81C000D41D34 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186673241DBD81C000D41D34 /* ApplicationRouter.swift */; };
 		18C37BB11DBD74C400FCA555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BB01DBD74C400FCA555 /* AppDelegate.swift */; };
 		18C37BB31DBD74C400FCA555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BB21DBD74C400FCA555 /* ViewController.swift */; };
@@ -47,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185B52EC1DBD977E00AC792C /* PostDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailRouter.swift; sourceTree = "<group>"; };
+		185B52F11DBD97A100AC792C /* PostDetailPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenterType.swift; sourceTree = "<group>"; };
+		185B52F31DBD97AF00AC792C /* PostDetailPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenterDelegate.swift; sourceTree = "<group>"; };
+		185B52F51DBD97B900AC792C /* PostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		185B52F71DBD97CB00AC792C /* PostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		185B52F81DBD97CB00AC792C /* PostDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
+		185B52FC1DBD983C00AC792C /* PostDetailViewEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewEntity.swift; sourceTree = "<group>"; };
 		186673241DBD81C000D41D34 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
 		18C37BAD1DBD74C400FCA555 /* MVPExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C37BB01DBD74C400FCA555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +114,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185B52EB1DBD976800AC792C /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				185B52EE1DBD978200AC792C /* View */,
+				185B52EF1DBD978600AC792C /* Presenter */,
+				185B52F01DBD978B00AC792C /* View Entities */,
+				185B52EC1DBD977E00AC792C /* PostDetailRouter.swift */,
+			);
+			name = PostDetail;
+			sourceTree = "<group>";
+		};
+		185B52EE1DBD978200AC792C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				185B52F71DBD97CB00AC792C /* PostDetailViewController.swift */,
+				185B52F81DBD97CB00AC792C /* PostDetailViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		185B52EF1DBD978600AC792C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				185B52F11DBD97A100AC792C /* PostDetailPresenterType.swift */,
+				185B52F31DBD97AF00AC792C /* PostDetailPresenterDelegate.swift */,
+				185B52F51DBD97B900AC792C /* PostDetailPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		185B52F01DBD978B00AC792C /* View Entities */ = {
+			isa = PBXGroup;
+			children = (
+				185B52FC1DBD983C00AC792C /* PostDetailViewEntity.swift */,
+			);
+			name = "View Entities";
+			sourceTree = "<group>";
+		};
 		18C37BA41DBD74C400FCA555 = {
 			isa = PBXGroup;
 			children = (
@@ -157,8 +209,9 @@
 		18C37BDE1DBD74D200FCA555 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				18C37BDF1DBD74E400FCA555 /* PostsList */,
 				186673241DBD81C000D41D34 /* ApplicationRouter.swift */,
+				18C37BDF1DBD74E400FCA555 /* PostsList */,
+				185B52EB1DBD976800AC792C /* PostDetail */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -352,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C37BF91DBD78B700FCA555 /* PostsListViewController.xib in Resources */,
+				185B52FA1DBD97CB00AC792C /* PostDetailViewController.xib in Resources */,
 				18C37BFE1DBD793C00FCA555 /* PostTableViewCell.xib in Resources */,
 				18C37BBB1DBD74C400FCA555 /* LaunchScreen.storyboard in Resources */,
 				18C37BB81DBD74C400FCA555 /* Assets.xcassets in Resources */,
@@ -382,13 +436,19 @@
 			files = (
 				18C37BFC1DBD793400FCA555 /* PostTableViewCell.swift in Sources */,
 				18D133541DBD7C9500294E10 /* Result.swift in Sources */,
+				185B52F61DBD97B900AC792C /* PostDetailPresenter.swift in Sources */,
 				18C37C021DBD7B8600FCA555 /* DataManager.swift in Sources */,
+				185B52F21DBD97A100AC792C /* PostDetailPresenterType.swift in Sources */,
 				18C37BE51DBD750C00FCA555 /* PostsListRouter.swift in Sources */,
 				18C37BEA1DBD75C800FCA555 /* PostsListPresenter.swift in Sources */,
+				185B52ED1DBD977E00AC792C /* PostDetailRouter.swift in Sources */,
 				18C37BF81DBD78B700FCA555 /* PostsListViewController.swift in Sources */,
+				185B52FD1DBD983C00AC792C /* PostDetailViewEntity.swift in Sources */,
+				185B52F41DBD97AF00AC792C /* PostDetailPresenterDelegate.swift in Sources */,
 				18C37BEE1DBD764000FCA555 /* PostViewEntity.swift in Sources */,
 				18C37BB31DBD74C400FCA555 /* ViewController.swift in Sources */,
 				18C37BE81DBD75C000FCA555 /* PostsListPresenterType.swift in Sources */,
+				185B52F91DBD97CB00AC792C /* PostDetailViewController.swift in Sources */,
 				18C37BF31DBD77F900FCA555 /* Post.swift in Sources */,
 				186673251DBD81C000D41D34 /* ApplicationRouter.swift in Sources */,
 				18C37BEC1DBD75ED00FCA555 /* PostsListPresenterDelegate.swift in Sources */,

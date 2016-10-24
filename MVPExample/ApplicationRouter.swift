@@ -9,10 +9,20 @@
 import UIKit
 
 final class ApplicationRouter {
+    let keyWindow: UIWindow
     
-    
+    init(keyWindow: inout UIWindow?) {
+        keyWindow = UIWindow(frame: UIScreen.main.bounds)
+        self.keyWindow = keyWindow!
+    }
     
     func start() {
-        
+        let router = PostsListRouter()
+        let mainController = router.build()
+        let navigationController = UINavigationController(
+            rootViewController: mainController
+        )
+        keyWindow.rootViewController = navigationController
+        keyWindow.makeKeyAndVisible()
     }
 }

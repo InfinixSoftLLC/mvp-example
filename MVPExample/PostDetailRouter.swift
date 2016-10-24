@@ -1,5 +1,5 @@
 //
-//  PostsListRouter.swift
+//  PostDetailRouter.swift
 //  MVPExample
 //
 //  Created by Fernando Ortiz on 10/23/16.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-final class PostsListRouter {
-    var presenter: PostsListPresenter?
-    var viewController: PostsListViewController?
+final class PostDetailRouter {
+    var presenter: PostDetailPresenter?
+    var viewController: PostDetailViewController?
     
     func build() -> UIViewController {
-        self.presenter = PostsListPresenter()
-        self.viewController = PostsListViewController(presenter: presenter!, router: self)
+        self.presenter = PostDetailPresenter()
+        self.viewController = PostDetailViewController(presenter: presenter!, router: self)
         self.presenter!.delegate = self.viewController!
         return viewController!
     }

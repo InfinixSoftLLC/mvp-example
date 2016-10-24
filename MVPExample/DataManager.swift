@@ -25,7 +25,7 @@ extension DataManager {
 extension DataManager {
     func getPosts(completion: @escaping (Result<[Post]>) -> Void) {
         let session = URLSession.shared
-        let task = session.dataTask(with: URL(string: "")!) {
+        let task = session.dataTask(with: URL(string: "http://jsonplaceholder.typicode.com/posts")!) {
             (data: Data?, response: URLResponse?, error: Error?) in
             
             if let error = error {

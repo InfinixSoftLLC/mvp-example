@@ -23,6 +23,7 @@ class PostsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -45,6 +46,22 @@ class PostsListViewController: UIViewController {
 
 // MARK: - PostsListPresenterDelegate -
 extension PostsListViewController: PostsListPresenterDelegate {
+    func displayError(error: String) {
+        let alertController = UIAlertController(
+            title: error,
+            message: nil,
+            preferredStyle: .alert
+        )
+        
+        alertController.addAction(UIAlertAction(
+            title: "Accept",
+            style: .cancel,
+            handler: nil
+        ))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+
     func didLoadedPosts(posts: [PostViewEntity]) {
         self.posts = posts
         self.tableView.reloadData()
