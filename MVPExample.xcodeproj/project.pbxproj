@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186673251DBD81C000D41D34 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186673241DBD81C000D41D34 /* ApplicationRouter.swift */; };
 		18C37BB11DBD74C400FCA555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BB01DBD74C400FCA555 /* AppDelegate.swift */; };
 		18C37BB31DBD74C400FCA555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BB21DBD74C400FCA555 /* ViewController.swift */; };
 		18C37BB61DBD74C400FCA555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C37BB41DBD74C400FCA555 /* Main.storyboard */; };
@@ -14,6 +15,18 @@
 		18C37BBB1DBD74C400FCA555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C37BB91DBD74C400FCA555 /* LaunchScreen.storyboard */; };
 		18C37BC61DBD74C500FCA555 /* MVPExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BC51DBD74C500FCA555 /* MVPExampleTests.swift */; };
 		18C37BD11DBD74C500FCA555 /* MVPExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BD01DBD74C500FCA555 /* MVPExampleUITests.swift */; };
+		18C37BE51DBD750C00FCA555 /* PostsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BE41DBD750C00FCA555 /* PostsListRouter.swift */; };
+		18C37BE81DBD75C000FCA555 /* PostsListPresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BE71DBD75C000FCA555 /* PostsListPresenterType.swift */; };
+		18C37BEA1DBD75C800FCA555 /* PostsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BE91DBD75C800FCA555 /* PostsListPresenter.swift */; };
+		18C37BEC1DBD75ED00FCA555 /* PostsListPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BEB1DBD75ED00FCA555 /* PostsListPresenterDelegate.swift */; };
+		18C37BEE1DBD764000FCA555 /* PostViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BED1DBD764000FCA555 /* PostViewEntity.swift */; };
+		18C37BF31DBD77F900FCA555 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BF21DBD77F900FCA555 /* Post.swift */; };
+		18C37BF81DBD78B700FCA555 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BF61DBD78B700FCA555 /* PostsListViewController.swift */; };
+		18C37BF91DBD78B700FCA555 /* PostsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C37BF71DBD78B700FCA555 /* PostsListViewController.xib */; };
+		18C37BFC1DBD793400FCA555 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37BFB1DBD793400FCA555 /* PostTableViewCell.swift */; };
+		18C37BFE1DBD793C00FCA555 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C37BFD1DBD793C00FCA555 /* PostTableViewCell.xib */; };
+		18C37C021DBD7B8600FCA555 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C37C011DBD7B8600FCA555 /* DataManager.swift */; };
+		18D133541DBD7C9500294E10 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D133531DBD7C9400294E10 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186673241DBD81C000D41D34 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
 		18C37BAD1DBD74C400FCA555 /* MVPExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C37BB01DBD74C400FCA555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C37BB21DBD74C400FCA555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,18 @@
 		18C37BCC1DBD74C500FCA555 /* MVPExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C37BD01DBD74C500FCA555 /* MVPExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPExampleUITests.swift; sourceTree = "<group>"; };
 		18C37BD21DBD74C500FCA555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C37BE41DBD750C00FCA555 /* PostsListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListRouter.swift; sourceTree = "<group>"; };
+		18C37BE71DBD75C000FCA555 /* PostsListPresenterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListPresenterType.swift; sourceTree = "<group>"; };
+		18C37BE91DBD75C800FCA555 /* PostsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListPresenter.swift; sourceTree = "<group>"; };
+		18C37BEB1DBD75ED00FCA555 /* PostsListPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListPresenterDelegate.swift; sourceTree = "<group>"; };
+		18C37BED1DBD764000FCA555 /* PostViewEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewEntity.swift; sourceTree = "<group>"; };
+		18C37BF21DBD77F900FCA555 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		18C37BF61DBD78B700FCA555 /* PostsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		18C37BF71DBD78B700FCA555 /* PostsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostsListViewController.xib; sourceTree = "<group>"; };
+		18C37BFB1DBD793400FCA555 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		18C37BFD1DBD793C00FCA555 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		18C37C011DBD7B8600FCA555 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		18D133531DBD7C9400294E10 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +123,9 @@
 		18C37BAF1DBD74C400FCA555 /* MVPExample */ = {
 			isa = PBXGroup;
 			children = (
-				18C37BDE1DBD74D200FCA555 /* Aplicaion */,
+				18D133521DBD7C8A00294E10 /* Utils */,
+				18C37BFF1DBD7B7000FCA555 /* Model */,
+				18C37BDE1DBD74D200FCA555 /* Application */,
 				18C37BB01DBD74C400FCA555 /* AppDelegate.swift */,
 				18C37BB21DBD74C400FCA555 /* ViewController.swift */,
 				18C37BB41DBD74C400FCA555 /* Main.storyboard */,
@@ -126,11 +154,94 @@
 			path = MVPExampleUITests;
 			sourceTree = "<group>";
 		};
-		18C37BDE1DBD74D200FCA555 /* Aplicaion */ = {
+		18C37BDE1DBD74D200FCA555 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				18C37BDF1DBD74E400FCA555 /* PostsList */,
+				186673241DBD81C000D41D34 /* ApplicationRouter.swift */,
 			);
-			name = Aplicaion;
+			name = Application;
+			sourceTree = "<group>";
+		};
+		18C37BDF1DBD74E400FCA555 /* PostsList */ = {
+			isa = PBXGroup;
+			children = (
+				18C37BE31DBD74FD00FCA555 /* View */,
+				18C37BE21DBD74F800FCA555 /* Presenter */,
+				18C37BE11DBD74F100FCA555 /* View Entities */,
+				18C37BE41DBD750C00FCA555 /* PostsListRouter.swift */,
+			);
+			name = PostsList;
+			sourceTree = "<group>";
+		};
+		18C37BE01DBD74E800FCA555 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				18C37BF21DBD77F900FCA555 /* Post.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		18C37BE11DBD74F100FCA555 /* View Entities */ = {
+			isa = PBXGroup;
+			children = (
+				18C37BED1DBD764000FCA555 /* PostViewEntity.swift */,
+			);
+			name = "View Entities";
+			sourceTree = "<group>";
+		};
+		18C37BE21DBD74F800FCA555 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18C37BE71DBD75C000FCA555 /* PostsListPresenterType.swift */,
+				18C37BEB1DBD75ED00FCA555 /* PostsListPresenterDelegate.swift */,
+				18C37BE91DBD75C800FCA555 /* PostsListPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		18C37BE31DBD74FD00FCA555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18C37BFA1DBD78CB00FCA555 /* Cells */,
+				18C37BF61DBD78B700FCA555 /* PostsListViewController.swift */,
+				18C37BF71DBD78B700FCA555 /* PostsListViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		18C37BFA1DBD78CB00FCA555 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18C37BFB1DBD793400FCA555 /* PostTableViewCell.swift */,
+				18C37BFD1DBD793C00FCA555 /* PostTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		18C37BFF1DBD7B7000FCA555 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18C37C001DBD7B7A00FCA555 /* Data Access */,
+				18C37BE01DBD74E800FCA555 /* Entities */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		18C37C001DBD7B7A00FCA555 /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				18C37C011DBD7B8600FCA555 /* DataManager.swift */,
+			);
+			name = "Data Access";
+			sourceTree = "<group>";
+		};
+		18D133521DBD7C8A00294E10 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18D133531DBD7C9400294E10 /* Result.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +351,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C37BF91DBD78B700FCA555 /* PostsListViewController.xib in Resources */,
+				18C37BFE1DBD793C00FCA555 /* PostTableViewCell.xib in Resources */,
 				18C37BBB1DBD74C400FCA555 /* LaunchScreen.storyboard in Resources */,
 				18C37BB81DBD74C400FCA555 /* Assets.xcassets in Resources */,
 				18C37BB61DBD74C400FCA555 /* Main.storyboard in Resources */,
@@ -267,7 +380,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C37BFC1DBD793400FCA555 /* PostTableViewCell.swift in Sources */,
+				18D133541DBD7C9500294E10 /* Result.swift in Sources */,
+				18C37C021DBD7B8600FCA555 /* DataManager.swift in Sources */,
+				18C37BE51DBD750C00FCA555 /* PostsListRouter.swift in Sources */,
+				18C37BEA1DBD75C800FCA555 /* PostsListPresenter.swift in Sources */,
+				18C37BF81DBD78B700FCA555 /* PostsListViewController.swift in Sources */,
+				18C37BEE1DBD764000FCA555 /* PostViewEntity.swift in Sources */,
 				18C37BB31DBD74C400FCA555 /* ViewController.swift in Sources */,
+				18C37BE81DBD75C000FCA555 /* PostsListPresenterType.swift in Sources */,
+				18C37BF31DBD77F900FCA555 /* Post.swift in Sources */,
+				186673251DBD81C000D41D34 /* ApplicationRouter.swift in Sources */,
+				18C37BEC1DBD75ED00FCA555 /* PostsListPresenterDelegate.swift in Sources */,
 				18C37BB11DBD74C400FCA555 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +635,7 @@
 				18C37BD71DBD74C500FCA555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C37BD81DBD74C500FCA555 /* Build configuration list for PBXNativeTarget "MVPExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +644,7 @@
 				18C37BDA1DBD74C500FCA555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C37BDB1DBD74C500FCA555 /* Build configuration list for PBXNativeTarget "MVPExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +653,7 @@
 				18C37BDD1DBD74C500FCA555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
